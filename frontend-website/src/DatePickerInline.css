@@ -1,0 +1,57 @@
+.datepicker-inline .react-datepicker__time-container {
+  position: static;
+  border-left: none;
+  margin-top: 8px;
+  width: auto;
+}
+
+.datepicker-inline .react-datepicker__time {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.datepicker-inline .react-datepicker__time-list {
+  height: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+.datepicker-inline .react-datepicker__time-list-item {
+  height: auto;
+  line-height: 1.5em;
+}
+
+/* Target the main container from your <DatePicker className="datepicker-inline" /> */
+.datepicker-inline.react-datepicker {
+  font-size: 1.75rem;        /* Bigger font => bigger layout */
+  line-height: 2rem;
+  display: inline-block;     /* So it sizes around its contents */
+  overflow: visible;         /* Ensures we can see the entire scaled content */
+}
+
+/* Make day cells bigger squares */
+.datepicker-inline.react-datepicker .react-datepicker__day,
+.datepicker-inline.react-datepicker .react-datepicker__day-name {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;         /* vertically center the text */
+  margin: 0.2rem;
+}
+
+/* Time list items bigger too */
+.datepicker-inline.react-datepicker .react-datepicker__time-list-item {
+  font-size: 1.25rem;
+  padding: 0.5rem 0.75rem;
+}
+
+/* Optionally enlarge the month header navigation */
+.datepicker-inline.react-datepicker .react-datepicker__navigation {
+  top: 1.25rem;              /* move arrow down a bit so it’s visible */
+}
+.datepicker-inline.react-datepicker .react-datepicker__navigation-icon {
+  border-width: 0.25rem;     /* thicker arrows */
+}
+
